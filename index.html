@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunZone Interactive App 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Welcome to FunZone! 🎉</h1>
+
+  <!-- Button Click + Long Press -->
+  <button id="magicButton">Click Me!</button>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="galleryImage" src="images/image1.jpg" alt="Gallery Image">
+    <div class="gallery-controls">
+      <button id="prevBtn">⬅️ Prev</button>
+      <button id="nextBtn">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tabButton" data-tab="about">About</button>
+    <button class="tabButton" data-tab="gallery">Gallery</button>
+    <button class="tabButton" data-tab="contact">Contact</button>
+  </div>
+  <div class="tab-content" id="about"> <p>This is a fun interactive site built by YOU! ✨</p> </div>
+  <div class="tab-content" id="gallery"> <p>Check out the amazing gallery above! 🎨</p> </div>
+  <div class="tab-content" id="contact"> <p>Reach out using the form below! 📬</p> </div>
+
+  <!-- Form Validation -->
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required><br>
+    <input type="email" id="email" placeholder="Your Email" required><br>
+    <input type="password" id="password" placeholder="Your Password" required><br>
+    <small id="passwordFeedback"></small><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Secret Double Click -->
+  <div id="secretArea">Double click here for a surprise! 🤫</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
